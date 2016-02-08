@@ -8,8 +8,6 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/indragie"
   s.ios.deployment_target = "8.1"
   s.osx.deployment_target = "10.10"
-  s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/GabrielHauber/SwiftAutoLayout.git", :tag => "#{s.version}" }
   s.source_files = "Sources/*.{swift}"
   s.requires_arc = true
