@@ -648,6 +648,7 @@
 				C060D6BC1C685E2B00C7F687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
