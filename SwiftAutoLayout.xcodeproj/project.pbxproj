@@ -13,6 +13,8 @@
 		725B5E6D1C40C5B100ABF520 /* SwiftAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B5E6B1C40C5B100ABF520 /* SwiftAutoLayout.swift */; };
 		725B5E731C40C5BB00ABF520 /* SwiftAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 725B5E701C40C5BB00ABF520 /* SwiftAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		725B5E741C40C5BB00ABF520 /* SwiftAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 725B5E701C40C5BB00ABF520 /* SwiftAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C060D6B81C685E2B00C7F687 /* SwiftAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725A2B551A046A3C00F44058 /* SwiftAutoLayout.framework */; };
+		C060D6BE1C685E4100C7F687 /* SwiftAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725A2B441A0468F300F44058 /* SwiftAutoLayoutTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 725A2B311A0468F300F44058;
 			remoteInfo = SwiftAutoLayout;
+		};
+		C060D6B91C685E2B00C7F687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 725A2B291A0468F300F44058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725A2B541A046A3C00F44058;
+			remoteInfo = "SwiftAutoLayout-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,6 +43,8 @@
 		725B5E6B1C40C5B100ABF520 /* SwiftAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftAutoLayout.swift; path = Sources/SwiftAutoLayout.swift; sourceTree = SOURCE_ROOT; };
 		725B5E6F1C40C5BB00ABF520 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Framework/Info.plist; sourceTree = "<group>"; };
 		725B5E701C40C5BB00ABF520 /* SwiftAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftAutoLayout.h; path = Framework/SwiftAutoLayout.h; sourceTree = "<group>"; };
+		C060D6B31C685E2B00C7F687 /* SwiftAutoLayout-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftAutoLayout-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C060D6B71C685E2B00C7F687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C060D6B01C685E2B00C7F687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C060D6B81C685E2B00C7F687 /* SwiftAutoLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +87,7 @@
 				725B5E6E1C40C5B300ABF520 /* Framework */,
 				725A2B341A0468F300F44058 /* Sources */,
 				725A2B411A0468F300F44058 /* SwiftAutoLayoutTests */,
+				C060D6B41C685E2B00C7F687 /* SwiftAutoLayout-MacTests */,
 				725A2B331A0468F300F44058 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +98,7 @@
 				725A2B321A0468F300F44058 /* SwiftAutoLayout.framework */,
 				725A2B3D1A0468F300F44058 /* SwiftAutoLayoutTests.xctest */,
 				725A2B551A046A3C00F44058 /* SwiftAutoLayout.framework */,
+				C060D6B31C685E2B00C7F687 /* SwiftAutoLayout-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +136,14 @@
 				725B5E701C40C5BB00ABF520 /* SwiftAutoLayout.h */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		C060D6B41C685E2B00C7F687 /* SwiftAutoLayout-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				C060D6B71C685E2B00C7F687 /* Info.plist */,
+			);
+			path = "SwiftAutoLayout-MacTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +222,24 @@
 			productReference = 725A2B551A046A3C00F44058 /* SwiftAutoLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C060D6B21C685E2B00C7F687 /* SwiftAutoLayout-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C060D6BD1C685E2B00C7F687 /* Build configuration list for PBXNativeTarget "SwiftAutoLayout-MacTests" */;
+			buildPhases = (
+				C060D6AF1C685E2B00C7F687 /* Sources */,
+				C060D6B01C685E2B00C7F687 /* Frameworks */,
+				C060D6B11C685E2B00C7F687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C060D6BA1C685E2B00C7F687 /* PBXTargetDependency */,
+			);
+			name = "SwiftAutoLayout-MacTests";
+			productName = "SwiftAutoLayout-MacTests";
+			productReference = C060D6B31C685E2B00C7F687 /* SwiftAutoLayout-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +259,9 @@
 					725A2B541A046A3C00F44058 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					C060D6B21C685E2B00C7F687 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 725A2B2C1A0468F300F44058 /* Build configuration list for PBXProject "SwiftAutoLayout" */;
@@ -229,6 +279,7 @@
 				725A2B311A0468F300F44058 /* SwiftAutoLayout-iOS */,
 				725A2B3C1A0468F300F44058 /* SwiftAutoLayoutTests */,
 				725A2B541A046A3C00F44058 /* SwiftAutoLayout-Mac */,
+				C060D6B21C685E2B00C7F687 /* SwiftAutoLayout-MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +300,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		725A2B531A046A3C00F44058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C060D6B11C685E2B00C7F687 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,6 +340,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C060D6AF1C685E2B00C7F687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C060D6BE1C685E4100C7F687 /* SwiftAutoLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +355,11 @@
 			isa = PBXTargetDependency;
 			target = 725A2B311A0468F300F44058 /* SwiftAutoLayout-iOS */;
 			targetProxy = 725A2B3F1A0468F300F44058 /* PBXContainerItemProxy */;
+		};
+		C060D6BA1C685E2B00C7F687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 725A2B541A046A3C00F44058 /* SwiftAutoLayout-Mac */;
+			targetProxy = C060D6B91C685E2B00C7F687 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,6 +569,39 @@
 			};
 			name = Release;
 		};
+		C060D6BB1C685E2B00C7F687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SwiftAutoLayout-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.SwiftAutoLayout-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C060D6BC1C685E2B00C7F687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SwiftAutoLayout-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indragie.SwiftAutoLayout-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +640,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C060D6BD1C685E2B00C7F687 /* Build configuration list for PBXNativeTarget "SwiftAutoLayout-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C060D6BB1C685E2B00C7F687 /* Debug */,
+				C060D6BC1C685E2B00C7F687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
