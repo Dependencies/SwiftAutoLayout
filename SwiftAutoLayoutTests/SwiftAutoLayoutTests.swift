@@ -28,8 +28,10 @@ class SwiftAutoLayoutTests: XCTestCase {
         XCTAssertEqual(view1.centerX.attribute, NSLayoutAttribute.CenterX)
         XCTAssertEqual(view1.centerY.attribute, NSLayoutAttribute.CenterY)
         XCTAssertEqual(view1.baseline.attribute, NSLayoutAttribute.Baseline)
-        
-        XCTAssertEqual(view1.firstBaseline.attribute, NSLayoutAttribute.FirstBaseline)
+
+        if #available(OSX 10.11, *) {
+            XCTAssertEqual(view1.firstBaseline.attribute, NSLayoutAttribute.FirstBaseline)
+        }
         
         #if os(iOS)
             XCTAssertEqual(view1.leftMargin.attribute, NSLayoutAttribute.LeftMargin)
