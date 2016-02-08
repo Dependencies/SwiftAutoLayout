@@ -106,7 +106,23 @@ public extension LayoutRegion {
     public var centerX: LayoutItem<XAxis> { return layoutItem(self, .CenterX) }
     public var centerY: LayoutItem<YAxis> { return layoutItem(self, .CenterY) }
     public var baseline: LayoutItem<YAxis> { return layoutItem(self, .Baseline) }
+    
+    @available(OSX 10.11, *)
+    public var firstBaseline: LayoutItem<YAxis> { return layoutItem(self, .FirstBaseline) }
 }
+
+#if os(iOS)
+public extension LayoutRegion {
+    public var leftMargin: LayoutItem<XAxis> { return layoutItem(self, .LeftMargin) }
+    public var rightMargin: LayoutItem<XAxis> { return layoutItem(self, .RightMargin) }
+    public var topMargin: LayoutItem<YAxis> { return layoutItem(self, .TopMargin) }
+    public var bottomMargin: LayoutItem<YAxis> { return layoutItem(self, .BottomMargin) }
+    public var leadingMargin: LayoutItem<XAxis> { return layoutItem(self, .LeadingMargin) }
+    public var trailingMargin: LayoutItem<XAxis> { return layoutItem(self, .TrailingMargin) }
+    public var centerXWithinMargins: LayoutItem<XAxis> { return layoutItem(self, .CenterXWithinMargins) }
+    public var centerYWithinMargins: LayoutItem<YAxis> { return layoutItem(self, .CenterYWithinMargins) }
+}
+#endif
 
 #if os(iOS)
 public extension UIViewController {

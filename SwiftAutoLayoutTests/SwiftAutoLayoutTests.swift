@@ -28,6 +28,19 @@ class SwiftAutoLayoutTests: XCTestCase {
         XCTAssertEqual(view1.centerX.attribute, NSLayoutAttribute.CenterX)
         XCTAssertEqual(view1.centerY.attribute, NSLayoutAttribute.CenterY)
         XCTAssertEqual(view1.baseline.attribute, NSLayoutAttribute.Baseline)
+        
+        XCTAssertEqual(view1.firstBaseline.attribute, NSLayoutAttribute.FirstBaseline)
+        
+        #if os(iOS)
+            XCTAssertEqual(view1.leftMargin.attribute, NSLayoutAttribute.LeftMargin)
+            XCTAssertEqual(view1.rightMargin.attribute, NSLayoutAttribute.RightMargin)
+            XCTAssertEqual(view1.topMargin.attribute, NSLayoutAttribute.TopMargin)
+            XCTAssertEqual(view1.bottomMargin.attribute, NSLayoutAttribute.BottomMargin)
+            XCTAssertEqual(view1.leadingMargin.attribute, NSLayoutAttribute.LeadingMargin)
+            XCTAssertEqual(view1.trailingMargin.attribute, NSLayoutAttribute.TrailingMargin)
+            XCTAssertEqual(view1.centerXWithinMargins.attribute, NSLayoutAttribute.CenterXWithinMargins)
+            XCTAssertEqual(view1.centerYWithinMargins.attribute, NSLayoutAttribute.CenterYWithinMargins)
+        #endif
     }
     
     #if os(iOS)
