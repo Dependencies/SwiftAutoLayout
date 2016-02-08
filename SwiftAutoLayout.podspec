@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftAutoLayout"
-  s.version      = "1.0.2
+  s.version      = "1.0.2"
   s.summary      = "Swift autolayout DSL providing a more declarative way to express layout constraints."
   s.homepage     = "https://github.com/GabrielHauber/SwiftAutoLayout"
   s.license      = "MIT"
